@@ -1,0 +1,105 @@
+{
+  "id": 1,
+  "title": "Starting SEO as your Home",
+  "thumbnail": "/images/courses/seo-course.jpg",
+  "videoUrl": "https://www.youtube.com/watch?v=e-do9jV-eTk",
+  "duration": "3 weeks",
+  "lessons": 8,
+  "enrolled": 65,
+  "language": "English",
+  "progress": 63,
+  "materials": [
+    {
+      "icon": "User",
+      "label": "Instructor",
+      "value": "Ali Shahin"
+    },
+    {
+      "icon": "Clock",
+      "label": "Duration",
+      "value": "3 weeks"
+    },
+    {
+      "icon": "LibraryBig",
+      "label": "Lessons",
+      "value": "8"
+    },
+    {
+      "icon": "Users",
+      "label": "Enrolled",
+      "value": "65 students"
+    },
+    {
+      "icon": "Globe",
+      "label": "Language",
+      "value": "English"
+    }
+  ],
+  "topics": [
+    {
+      "title": "Week 1-4",
+      "description": "Advanced storytelling techniques for writers: Personas, Characters & Plots",
+      "lessons": [
+        { "title": "Introduction", "locked": false },
+        { "title": "Course Overview", "locked": true },
+        { "title": "Course Exercise / Reference Files", "locked": true },
+        { "title": "Code Editor Installation (Optional)", "locked": true },
+        { "title": "Embedding PHP in HTML", "locked": true }
+      ]
+    },
+    {
+      "title": "Week 5-8",
+      "description": "Advanced storytelling techniques for writers: Personas, Characters & Plots",
+      "lessons": [
+        { "title": "Defining Functions", "locked": true },
+        { "title": "Function Parameters", "locked": true },
+        {
+          "title": "Return Values From Functions",
+          "locked": false,
+          "questions": 2,
+          "time": "15 MINUTES"
+        },
+        { "title": "Global Variable and Scope", "locked": true },
+        { "title": "New Way of Creating a Constant", "locked": true },
+        { "title": "Constants", "locked": true }
+      ]
+    },
+    {
+      "title": "Week 5-8",
+      "description": "Advanced storytelling techniques for writers: Personas, Characters & Plots",
+      "lessons": [
+        { "title": "Defining Functions", "locked": true },
+        { "title": "Function Parameters", "locked": true },
+        {
+          "title": "Return Values From Functions",
+          "locked": false,
+          "questions": 2,
+          "time": "15 MINUTES"
+        },
+        { "title": "Global Variable and Scope", "locked": true },
+        { "title": "New Way of Creating a Constant", "locked": true },
+        { "title": "Constants", "locked": true }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "name": "Student Name Goes Here",
+      "date": "Oct 10, 2021",
+      "avatar": "/images/users/user1.jpg",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "name": "Student Name Goes Here",
+      "date": "Oct 15, 2021",
+      "avatar": "/images/users/user2.jpg",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "name": "Student Name Goes Here",
+      "date": "Oct 19, 2021",
+      "avatar": "/images/users/user3.jpg",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
+}
