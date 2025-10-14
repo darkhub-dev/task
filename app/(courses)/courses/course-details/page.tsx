@@ -1,11 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
-import courseData from "@/constants/courseDetails.json";
-import { Progress } from "@/components/ui/progress";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import Image from "next/image";
 import {
   VideoPlayer,
   VideoPlayerContent,
@@ -20,9 +14,8 @@ import {
   VideoPlayerVolumeRange,
   VideoPlayerWideButton,
 } from "@/components/kibo-ui/video-player";
-import { Textarea } from "@/components/ui/textarea";
-import { Eye, LockKeyhole } from "lucide-react";
-import { User, Clock, Users, Globe, LibraryBig } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Dialog,
   DialogClose,
@@ -35,6 +28,19 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Progress } from "@/components/ui/progress";
+import { Textarea } from "@/components/ui/textarea";
+import courseData from "@/constants/courseDetails.json";
+import {
+  Clock,
+  Globe,
+  LibraryBig,
+  LockKeyhole,
+  User,
+  Users,
+} from "lucide-react";
+import Image from "next/image";
+import React, { useState } from "react";
 
 
 const iconsMap: Record<string, React.ElementType> = {

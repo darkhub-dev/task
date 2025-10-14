@@ -1,6 +1,8 @@
 "use client";
 
-import React, { useRef } from "react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { Maximize, Maximize2, Minimize, Minimize2 } from "lucide-react";
 import {
   MediaControlBar,
   MediaController,
@@ -13,9 +15,7 @@ import {
   MediaVolumeRange,
 } from "media-chrome/react";
 import type { ComponentProps, CSSProperties } from "react";
-import { cn } from "@/lib/utils";
-import { Maximize2, Minimize2, Maximize, Minimize } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useRef } from "react";
 
 // =========================
 // 🎨 Custom Variables
@@ -165,11 +165,13 @@ export const VideoPlayerFullScreenButton = ({
 }: {
   className?: string;
 }) => {
-  const videoContainerRef = useRef<HTMLDivElement | null>(null);
+  const buttonRef = useRef<HTMLButtonElement | null>(null);
 
   // ✅ toggle fullscreen mode
   const toggleFullScreen = () => {
-    const element = videoContainerRef.current?.closest(
+    if (typeof document === "undefined") return;
+
+    const element = buttonRef.current?.closest(
       "media-controller"
     ) as HTMLElement | null;
 
@@ -188,9 +190,9 @@ export const VideoPlayerFullScreenButton = ({
         className
       )}
       title="Toggle Fullscreen"
-      ref={videoContainerRef as any}
+      ref={buttonRef}
     >
-      {!document.fullscreenElement ? (
+      {typeof document !== "undefined" && !document.fullscreenElement ? (
         <Maximize size={18} />
       ) : (
         <Minimize size={18} />

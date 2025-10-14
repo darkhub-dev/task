@@ -1,6 +1,5 @@
-import React from "react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Page = () => {
   return (
@@ -9,8 +8,9 @@ const Page = () => {
         Welcome Mr. <span className="text-blue-600">Ali Shahin</span>
       </h1>
       <p className="text-lg text-muted-foreground max-w-xl">
-        I'm really excited for this opportunity, and I’ve prepared this page as
-        a warm welcome and a quick access to the course details you requested.
+        I&apos;m really excited for this opportunity, and I&apos;ve prepared
+        this page as a warm welcome and a quick access to the course details you
+        requested.
       </p>
 
       <Link href="/courses/course-details">
